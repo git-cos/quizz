@@ -1,0 +1,14 @@
+#image {
+    float: right;
+    padding-right: 100px;
+}
+#image1 {
+    float: left;
+    padding-left: 40px;
+}
+#image2 {
+    float: none;
+}
+body {
+    background-color: wheat;
+}
