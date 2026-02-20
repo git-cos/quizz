@@ -1,4 +1,19 @@
-#text {
+html{
+    background-image: url(background.jfif);
+}
+#text, #start{
+    background-color:wheat ;
+    border-radius: 10px;
+    border-radius: 1px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: sans-serif;
+    text-align: center;
+}
+#fine{
+    background-color:wheat ;
+    border-radius: 10px;
+    border-radius: 1px;
     font-family: sans-serif;
 }
 #image {
@@ -13,5 +28,19 @@
     float: none;
 }
 body {
-    background-color: wheat;
+    background-image: wheat;
+}
+h3:hover{
+    cursor: pointer;
+}
+h3:active{
+    transform: translateY(1px);
+}
+button, #parere{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+button:hover, #parere:hover{
+    cursor: pointer;
 }
