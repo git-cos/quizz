@@ -1,46 +1,105 @@
-html{
-    background-image: url(background.jfif);
-}
-#text, #start{
-    background-color:wheat ;
-    border-radius: 10px;
-    border-radius: 1px;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: sans-serif;
-    text-align: center;
-}
-#fine{
-    background-color:wheat ;
-    border-radius: 10px;
-    border-radius: 1px;
-    font-family: sans-serif;
-}
-#image {
-    float: right;
-    padding-right: 100px;
-}
-#image1 {
-    float: left;
-    padding-left: 40px;
-}
-#image2 {
-    float: none;
-}
-body {
-    background-image: wheat;
-}
-h3:hover{
-    cursor: pointer;
-}
-h3:active{
-    transform: translateY(1px);
-}
-button, #parere{
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-}
-button:hover, #parere:hover{
-    cursor: pointer;
-}
+<html>
+    <head>
+        <title>Quiz cultura generale</title>
+        <link rel="icon" type="image/png" href="sfondoi.webp">
+        <link href="quiz2.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="backim"></div>
+        <div id="text">
+    <div id="start">
+        <h1 style="color: red; text-align: center;">Quiz di cultura generale</h1>
+        <hr>
+        <h1>INIZIA IL QUIZ</h1>
+        <input type="text" id="username" placeholder="Scrivi qui il tuo nome">
+        <button onclick="start()">Start</button>
+        <h2></h2>
+        <br>
+    </div>
+    <div id="lebron">
+        <div id="image">
+            <img src="lebron.jpg"; width="340"; height="200"/>
+        </div>
+        <h2 style="color: blue;"><strong>Quanti anelli ha vinto LeBron James?</strong></h2>
+        <h3 id="3" onclick="click3()">- 3</h3>
+        <h3 id="4" onclick="click4()">- 4</h3>
+        <h3 id="5" onclick="click5()">- 5</h3>
+        <button onclick="passaindia()">Continua il quiz</button>
+        <h2></h2>
+        <br>
+    </div> 
+    <div id="india">  
+        <div id="image">
+            <img src="india.jpg"; width="340"; height="200"/>
+        </div>
+        <hr> 
+        <h2 style="color: blue;"><strong>Qual è la capitale dell' India?</strong></h2>
+        <h3 id="Giacarta" onclick="clickGiacarta()">- Giacarta</h3>
+        <h3 id="Berlino" onclick="clickBerlino()">- Berlino</h3>
+        <h3 id="Nuova Dehli" onclick="clickNuova()">- Nuova Dehli</h3>
+        <button onclick="passacorea()">Continua il quiz</button>
+        <h2></h2>
+        <br>
+    </div>
+    <div id="corea">
+        <h2 style="color: blue;"><strong>Come si chiama il leader supremo della Corea del Nord?</strong></h2>
+        <div id="image1">
+            <img src="kim.jpg"; width="210"; height="150"/>
+        </div>
+        <h3 id="Kim Jong-un" onclick="clickKim()">- Kim Jong-un</h3>
+        <h3 id="Xi Jinping" onclick="clickXi()">- Xi Jinping</h3>
+        <h3 id="Sergio Mattarella" onclick="clickSergio()">- Sergio Mattarella</h3>
+        <button onclick="passabastiglia()">Continua il quiz</button>
+        <h2></h2>
+        <br>
+    </div>
+    <div id="bastiglia">
+        <div id="image">
+            <img src="basta.avif"; width="300"; height="200"/>
+        </div>
+        <h2 style="color: blue;"><strong>In che anno accadde la presa della Bastiglia?</strong></h2>
+        <h3 id="1787" onclick="click1787()">- 1787</h3>
+        <h3 id="1788" onclick="click1788()">- 1788</h3>
+        <h3 id="1789" onclick="click1789()">- 1789</h3>
+        <button onclick="passasong2()">Continua il quiz</button>
+        <h2></h2>
+        <br>
+    </div>
+    <div id="song2">
+        <br/>
+        <hr> 
+        <div id="image2">
+            <img src="blu.jpg"; width="300"; height="200"/>
+        </div>
+        <h2 style="color: blue;"><strong>Che gruppo musicale pubblicò nel 1997 "Song 2"</strong></h2>
+        <h3 id="Oesis" onclick="clickOesis()">- Oesis</h3>
+        <h3 id="Blur" onclick="clickBlur()">- Blur</h3>
+        <h3 id="Rush" onclick="clickRush()">- Rush</h3>
+        <button onclick="passaossa()">Continua il quiz</button>
+        <h2></h2>
+        <br>
+    </div>
+    <div id="ossa">
+        
+            <img id="image" src="Ossa-del-corpo-umano.jpg"; width="280"; height="300"/>
+        
+        <h2 style="color: blue;"><strong>Quante ossa ci sono nel corpo umano (adulti)?</strong></h2>
+        <h3 id="206" onclick="click206()">- 206</h3>
+        <h3 id="205" onclick="click205()">- 205</h3>
+        <h3 id="204" onclick="click204()">- 204</h3>
+        <button onclick="passafine()">Fine</button>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <br>
+        <h2></h2>
+        <br>
+        <h2></h2>
+        <br>
+    </div> 
+    <div id="fine">
+        <h1 id="parere" onclick="clickparere()">Schiaccia qui se il quiz ti è piaciuto</h1>
+        </div>
+        <script src="quiz1.js"></script>
+    </body>
+</html>
